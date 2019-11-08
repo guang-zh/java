@@ -1,0 +1,10 @@
+public class PrintStars{
+  public static void main(String[] args){
+   java.util.Scanner reader=new java.util.Scanner(System.in);
+   System.out.println("Input a number: ");
+   int num=reader.nextInt();
+   for (int i=1; i<num; i++){
+    System.out.println("*"); 
+   }
+  }
+}

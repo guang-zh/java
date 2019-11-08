@@ -1,0 +1,10 @@
+// Lab Exercise #15
+public class Lab15Exercise{
+  public static void main (String[] args){
+   int n=1;
+   while (n<1001){
+    System.out.println(n);
+    n=n+1;
+   }
+  }
+}
