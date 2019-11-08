@@ -1,0 +1,13 @@
+public class printShape(){
+  public static void main(String[] args){
+    printDiamond();
+  }
+  public static String printDiamond(){
+    System.out.println("*");
+    System.out.println("**");
+    System.out.println("***");
+    System.out.println("****");
+    System.out.println("*****");
+  }
+}
+  

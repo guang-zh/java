@@ -1,0 +1,14 @@
+public class Methods2 {
+ public static void main(String[] args) {
+int x = 0;
+  System.out.println(x);
+  confusing(x);
+  System.out.println(x);
+ }
+ public static int confusing(int y) {
+  System.out.println(y);
+y = y + 1; 
+  System.out.println(y);
+                   return y – 1;
+ }
+}

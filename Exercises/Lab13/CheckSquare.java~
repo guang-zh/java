@@ -1,0 +1,13 @@
+public class CheckSquare{
+  public static void main (String[] args){
+    //ask user to input two values, then check if the boolean value is true
+  }
+  public static boolean isSquare(int l, int w){
+  if (l==w){
+   return true; 
+  }
+  else {
+   return false; 
+  }
+}
+}

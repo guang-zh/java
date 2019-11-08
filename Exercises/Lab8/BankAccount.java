@@ -1,0 +1,13 @@
+public class BankAccount{
+  public static void main(String[] args){
+   java.util.Scanner reader = new java.util.Scanner(System.in);
+   System.out.println("Initial amount of money in dollars: ");
+   double P= reader.nextDouble();
+   System.out.println("Amount of interest percentage: ");
+   int r = reader.nextInt();
+   System.out.println("Number of times the interest: ");
+   int t = reader.nextInt();
+   double amount=P*Math.pow((1+(double)r/100),t);
+   System.out.println("Total amount of money in the account: $" + amount);
+  }
+}

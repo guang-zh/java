@@ -1,0 +1,46 @@
+//Error: missing return statement
+public class Grade{
+
+     public static void main(String []args){
+        java.util.Scanner reader=new java.util.Scanner(System.in);
+        System.out.println("Input your grade: ");
+        double grade=reader.nextDouble();
+        if (grade>=0){
+            char lettergrade=getGrade(grade);
+            System.out.println("Corresponding letter grade for " + grade + "is: " + lettergrade);
+        }
+        else {
+            System.out.println("Invalid marks!");
+        }
+     }
+        
+        public static char getGrade(double x){
+        
+        if (x<25){
+            char L= 'F';
+            return L;
+        }
+        else if (x>=25 && x<45){
+            char L= 'E';
+            return L;
+        }
+        else if (x>=45 && x<50){
+            char L= 'D';
+            return L;
+        }
+        else if (x>=50 && x<60){
+            char L= 'C';
+            return L;
+        }
+        else if (x>=60 && x<80){
+            char L= 'B';
+            return L;
+        }
+        else if (x>=80){
+            char L= 'A';
+            return L;
+        }
+       
+        }
+       
+}
