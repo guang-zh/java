@@ -1,0 +1,17 @@
+public class CountLetterInString {
+  public static void main(String[] args) {
+    int nLetters=countLetterInString ("PROGRAMMING", 'Z');
+    System.out.println(nLetters);
+  }
+  public static int countLetterInString(String words, char c) { // count number of times the character is in String
+    int stringLength = words.length(); // number of characters in the given String for # times in looping
+    int numLetters = 0; // initialize number of times for the occurance of character
+    for (int i = 0; i < stringLength; i++) { // loop through all characters in the words
+      if (c == words.charAt(i)) { // accumulate occurences if the character exists in each position of given String
+        numLetters = numLetters + 1;
+      }
+    }
+    return numLetters; // return number of occurences of the given character in the given String
+  }
+
+}
