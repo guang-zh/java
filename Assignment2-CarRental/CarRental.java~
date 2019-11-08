@@ -1,0 +1,25 @@
+public class CarRental{
+  public static void main (String [] args){
+   java.util.Scanner reader=new java.util.Scanner(System.in);
+   System.out.println("Input your age: ");
+   int age=reader.nextInt();
+   System.out.println("Input rental country: ");
+   char country=reader.next().charAt(0);
+   country=toLowerCase(country);
+   System.out.println("Input if you had accident before 'y' or 'n': ");
+   char accident=reader.next().charAt(0);
+   if (assessmentOfEligibility(age, country, accident)==true){
+     System.out.println("Input the type of car to rent: ");
+     char type=reader.next().charAt(0);
+     System.out.println("Input how many days you want to rent: ");
+     int days=reader.nextInt();
+     double rental=calculateCost(type, days, age);
+     System.out.println("The rental cost is: " + rental);
+     System.out.println("Input your payment method: ");
+     char paymethod=reader.next().charAt();
+     double deposit=calculateDeposit(rental,paymethod);
+     
+     
+   }
+  }
+}
