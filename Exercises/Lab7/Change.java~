@@ -1,0 +1,21 @@
+public class Change{
+  public static void main(String[] args){
+    int change=356;
+    int twoonies=change/200;
+    int change=change%200;
+    int loonies=change/100;
+    int change=change%100;
+    int quarters=change/25;
+    int change=change%25;
+    int dimes=change/10;
+    int change=change%10;
+    int nickels=change/5;
+    int pennies=change%5;
+    System.out.print("Twoonies: "+twoonies);
+    System.out.print("Loonies: "+loonies);
+    System.out.print("Quarters: "+quarters);
+    System.out.print("Dimes: "+dimes);
+    System.out.print("Nickels: "+nickels);
+    System.out.print("Pennies: "+pennies);
+  }
+}
